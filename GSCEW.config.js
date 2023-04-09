@@ -1,16 +1,13 @@
-import GSCEW from "./GSCEW_Lib/GSCEW.js"
-import Input_Scroll from "./GSCEW_Lib/Inputs/GSCEW_Input_Scroll.js"
-import Input_Mouse_Move from "./GSCEW_Lib/Inputs/GSCEW_Input_Mouse_Move.js"
-import WidgetFollowCursor from "./GSCEW_Lib/behaviours/WidgetFollowCursor.js"
-import WidgetMooveWithScroll from "./GSCEW_Lib/behaviours/WidgetMooveWithScroll.js"
+// this is an exemple of a GSCEW configuration file 
+// just import this file in your HTML or an other js file which is import in your HTML
 
-const Gestion = new GSCEW()
-Gestion.initInputs([
+const Gestion = new GSCEW() // init the class
+Gestion.initInputs([ // register your Input(s)
     // your GSCEW inputs
 ])
-Gestion.initBehaviours([
+Gestion.initBehaviours([ // register your Behaviour(s)
     // your GSCEW Behaviours
 ])
-Gestion.initObjects([
+Gestion.initObjects([ //register your Html Element(s) 
     // yout DOM elements
 ])
