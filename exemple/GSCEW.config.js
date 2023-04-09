@@ -6,11 +6,13 @@ import WidgetMooveWithScroll from "./GSCEW_Lib/behaviours/WidgetMooveWithScroll.
 
 const Gestion = new GSCEW()
 Gestion.initInputs([
-    // your GSCEW inputs
+    new Input_Scroll(),
+    new Input_Mouse_Move()
 ])
 Gestion.initBehaviours([
-    // your GSCEW Behaviours
+    new WidgetFollowCursor(),
+    new WidgetMooveWithScroll()
 ])
 Gestion.initObjects([
-    // yout DOM elements
+    document.querySelector("[id=e1]")
 ])
